@@ -29,6 +29,29 @@ Do NOT use for SSL certificate check -- use security_check_ssl instead. Do NOT u
         },
         required: ["domain"],
       },
+      outputSchema: {
+        type: "object",
+        properties: {
+          domain: { type: "string", description: "Domain queried" },
+          type: { type: "string", description: "DNS record type queried" },
+          records: {
+            type: "array",
+            description: "Array of DNS records found",
+            items: {
+              type: "object",
+              properties: {
+                name: { type: "string", description: "Record name" },
+                type: { type: "string", description: "Record type" },
+                data: { type: "string", description: "Record data/value" },
+                ttl: { type: "number", description: "Time to live in seconds" },
+              },
+            },
+          },
+          queryTime: { type: "number", description: "Query time in milliseconds" },
+          resolver: { type: "string", description: "DNS resolver used (cloudflare)" },
+        },
+        required: ["domain", "type", "records"],
+      },
     },
   ],
 };
