@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://dns-lookup-production-437a.up.railway.app/mcp"
+      "url": "https://dns-lookup-x402-production.up.railway.app/mcp"
     }
   ]
 }
