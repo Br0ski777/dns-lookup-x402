@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `network_lookup_dns` | POST | `/api/lookup` | $0.002 | Lookup DNS records for a domain |
+| `network_lookup_dns` | POST | `/api/lookup` | $0.005 | Lookup DNS records for a domain |
 
 ### `network_lookup_dns`
 
