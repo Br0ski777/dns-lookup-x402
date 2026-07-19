@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/lookup",
-      price: "$0.002",
+      price: "$0.005",
       description: "Lookup DNS records for a domain",
       toolName: "network_lookup_dns",
       toolDescription: `Use this when you need to look up DNS records for a domain. Returns all matching records in JSON via Cloudflare DNS-over-HTTPS.
